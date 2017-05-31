@@ -1,7 +1,9 @@
 ![SwiftyToggler Banner](https://raw.githubusercontent.com/MarcoSantarossa/SwiftyToggler/master/Resources/Banner/SwiftyTogglerBanner.png)
 
 ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-F16D39.svg?style=flat)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Alamofire.svg)](https://img.shields.io/cocoapods/v/SwiftyToggler.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg?style=flat)
 [![Twitter](https://img.shields.io/badge/twitter-@MarcoSantaDev-blue.svg?style=flat)](http://twitter.com/MarcoSantaDev)
 
 - [Requirements](#requirements)
