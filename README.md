@@ -1,3 +1,5 @@
+![SwiftyToggler Banner](https://raw.githubusercontent.com/MarcoSantarossa/SwiftyToggler/master/Resources/Banner/SwiftyTogglerBanner.png)
+
 ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-F16D39.svg?style=flat)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Twitter](https://img.shields.io/badge/twitter-@MarcoSantaDev-blue.svg?style=flat)](http://twitter.com/MarcoSantaDev)
@@ -192,7 +194,9 @@ extension ViewController: FeatureChangesObserver {
 }
 ```
 
-### Presente Features List
+### Present Features List
+
+![Presenting Mode Screenshots](https://raw.githubusercontent.com/MarcoSantarossa/SwiftyToggler/master/Resources/Screenshots/SwiftyTogglerPresentingModes.jpg)
 
 #### Modal
 
