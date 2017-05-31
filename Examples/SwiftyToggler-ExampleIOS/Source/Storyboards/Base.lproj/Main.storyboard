@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ewb-9f-SQ5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SwiftyToggler-Example-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftyToggler_ExampleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUs-wh-ttf" userLabel="FeatureHandlerView">
+                                <rect key="frame" x="46" y="20" width="283" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4m-H1-R72">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="load_features"/>
+                                        <state key="normal" title="Load Features"/>
+                                        <connections>
+                                            <action selector="loadFeaturesButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwh-Pj-jf6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxc-Tz-myF">
+                                        <rect key="frame" x="0.0" y="45" width="283" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="load_enable_features"/>
+                                        <state key="normal" title="Load &amp; Enable All Features"/>
+                                        <connections>
+                                            <action selector="LoadEnableAllFeaturesButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wIG-aN-XDP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY2-LM-jTQ">
+                                        <rect key="frame" x="0.0" y="90" width="283" height="30"/>
+                                        <state key="normal" title="Remove Features"/>
+                                        <connections>
+                                            <action selector="removeFeaturesButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mc1-LT-8fC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zY2-LM-jTQ" secondAttribute="trailing" id="2CW-OW-FT8"/>
+                                    <constraint firstItem="dxc-Tz-myF" firstAttribute="leading" secondItem="jUs-wh-ttf" secondAttribute="leading" id="3o6-HB-0Ds"/>
+                                    <constraint firstAttribute="height" constant="120" id="4Ls-8I-T0s"/>
+                                    <constraint firstAttribute="bottom" secondItem="zY2-LM-jTQ" secondAttribute="bottom" id="53f-7x-Igt"/>
+                                    <constraint firstItem="dxc-Tz-myF" firstAttribute="centerY" secondItem="jUs-wh-ttf" secondAttribute="centerY" id="C2j-A4-cGm"/>
+                                    <constraint firstAttribute="trailing" secondItem="dxc-Tz-myF" secondAttribute="trailing" id="YOd-04-RG6"/>
+                                    <constraint firstItem="M4m-H1-R72" firstAttribute="leading" secondItem="jUs-wh-ttf" secondAttribute="leading" id="YQi-bA-2h4"/>
+                                    <constraint firstItem="M4m-H1-R72" firstAttribute="top" secondItem="jUs-wh-ttf" secondAttribute="top" id="iQE-dI-41l"/>
+                                    <constraint firstItem="zY2-LM-jTQ" firstAttribute="leading" secondItem="jUs-wh-ttf" secondAttribute="leading" id="mLo-Ke-aT1"/>
+                                    <constraint firstAttribute="trailing" secondItem="M4m-H1-R72" secondAttribute="trailing" id="tOV-tN-dR1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixX-lA-Z46">
+                                <rect key="frame" x="46" y="220" width="283" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkU-eQ-XDC">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="show_modal_features_list"/>
+                                        <state key="normal" title="Show Modal Features List"/>
+                                        <connections>
+                                            <action selector="showFeaturestListButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4R-RT-MKQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sae-U7-8qw">
+                                        <rect key="frame" x="0.0" y="40" width="283" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="push_features_list"/>
+                                        <state key="normal" title="Push Features List"/>
+                                        <connections>
+                                            <segue destination="j5k-Uj-hae" kind="show" id="Uvj-4R-H1q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="UkU-eQ-XDC" firstAttribute="leading" secondItem="ixX-lA-Z46" secondAttribute="leading" id="EVl-w0-vKb"/>
+                                    <constraint firstAttribute="height" constant="70" id="P33-s6-jNm"/>
+                                    <constraint firstItem="sae-U7-8qw" firstAttribute="leading" secondItem="ixX-lA-Z46" secondAttribute="leading" id="UNh-f8-pnS"/>
+                                    <constraint firstAttribute="trailing" secondItem="sae-U7-8qw" secondAttribute="trailing" id="WA7-wp-pli"/>
+                                    <constraint firstAttribute="bottom" secondItem="sae-U7-8qw" secondAttribute="bottom" id="fHH-rD-Rb3"/>
+                                    <constraint firstAttribute="trailing" secondItem="UkU-eQ-XDC" secondAttribute="trailing" id="hUz-ed-rzX"/>
+                                    <constraint firstItem="UkU-eQ-XDC" firstAttribute="top" secondItem="ixX-lA-Z46" secondAttribute="top" id="pv9-Xc-G0t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jUs-wh-ttf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="EaG-cD-GgT"/>
+                            <constraint firstItem="jUs-wh-ttf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="VJb-WS-I4e"/>
+                            <constraint firstItem="ixX-lA-Z46" firstAttribute="top" secondItem="jUs-wh-ttf" secondAttribute="bottom" constant="80" id="a7G-hH-gME"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUs-wh-ttf" secondAttribute="trailing" constant="30" id="dvy-pp-tRc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ixX-lA-Z46" secondAttribute="trailing" constant="30" id="lcz-Au-lMq"/>
+                            <constraint firstItem="ixX-lA-Z46" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="sna-e2-PY8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SwiftyToggler-Example" id="eJP-Ce-q0j">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="UNP-mZ-1fz"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="63"/>
+        </scene>
+        <!--Features List-->
+        <scene sceneID="RcB-8d-Sja">
+            <objects>
+                <viewController title="Features List" id="j5k-Uj-hae" customClass="FeaturesListContainerViewController" customModule="SwiftyToggler_ExampleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0fG-DY-fcf"/>
+                        <viewControllerLayoutGuide type="bottom" id="gB7-lE-5mI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ok6-he-oqb">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBb-ht-VL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="63"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wkw-JW-3pN">
+            <objects>
+                <navigationController id="ewb-9f-SQ5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="bc7-pO-oFo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7YK-zm-Ofl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kB-JM-tNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="63"/>
+        </scene>
+    </scenes>
+</document>
