@@ -194,7 +194,9 @@ extension ViewController: FeatureChangesObserver {
 }
 ```
 
-### Presente Features List
+### Present Features List
+
+![Presenting Mode Screenshots](https://raw.githubusercontent.com/MarcoSantarossa/SwiftyToggler/master/Resources/Screenshots/SwiftyTogglerPresentingModes.jpg)
 
 #### Modal
 
