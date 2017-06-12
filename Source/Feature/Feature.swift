@@ -22,37 +22,40 @@
 //  THE SOFTWARE.
 //
 
-/// Extend this class to create a your feature object.
-/// It has a generic property `FeaturePayload` which is the payload of your feature.
-/// You can use the payload inside the methods `main()` and `dispose()` to perform your actions
-/// You may use the payload to add a parent view controller, some states of your application an so on to manage the feature.
-///
-/// Example:
-/// ```
-///struct MyPayload {
-///    let parentViewController: UIViewController
-///}
-///
-///class MyFeature: Feature<MyPayload> {
-///
-///	private let featureViewController: UIViewController
+/**
+ 
+    Extend this class to create a your feature object.
+    It has a generic property `FeaturePayload` which is the payload of your feature.
+    You can use the payload inside the methods `main()` and `dispose()` to perform your actions
+    You may use the payload to add a parent view controller, some states of your application an so on to manage the feature.
 
-///	override init(payload: MyPayload?, isEnabled: Bool = false) {
-///		featureViewController = UIViewController()
-///
-///		super.init(payload: payload, isEnabled: isEnabled)
-///	}
-///
-///    override func main() {
-///        payload?.parentViewController.present(featureViewController, animated: true, completion: nil)
-///    }
-///
-///    override func dispose() {
-///        featureViewController.dismiss(animated: true, completion: nil)
-///    }
-///}
-/// ```
+    Example:
 
+    ```
+        struct MyPayload {
+            let parentViewController: UIViewController
+        }
+
+        class MyFeature: Feature<MyPayload> {
+
+            private let featureViewController: UIViewController
+
+            override init(payload: MyPayload?, isEnabled: Bool = false) {
+                featureViewController = UIViewController()
+
+                super.init(payload: payload, isEnabled: isEnabled)
+            }
+
+            override func main() {
+                payload?.parentViewController.present(featureViewController, animated: true, completion: nil)
+            }
+
+            override func dispose() {
+                featureViewController.dismiss(animated: true, completion: nil)
+            }
+        }
+    ```
+*/
 open class Feature<FeaturePayload>: FeatureProtocol {
     public var payload: FeaturePayload?
     public var isEnabled: Bool
